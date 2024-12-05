@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D1B2A;
+    color: #E0E0E0;
+}
+
+/* Navigation Bar Styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1B263B;
+    color: #E0E0E0;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensures the navbar is on top */
+}
+
+nav .logo img {
+    height: 45px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #3DA5D9;
+    background-color: #415A77;
+    border-radius: 5px;
+}
+
+nav .profile-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Container for the forms */
+.container {
+    background-color: #1B263B;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+    margin-top: 80px; /* Increased margin-top to ensure the form is below the navbar */
+
+}
+
+/* Input and Select Styling */
+input, select {
+    width: calc(100% - 20px); /* Adjust width to fit within padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #415A77;
+    border-radius: 4px;
+    background-color: #2E4057;
+    color: #E0E0E0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: calc(100% - 20px); /* Adjust width for consistency with other inputs */
+    background-color: #3DA5D9;
+    color: #1B263B;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2e5487;
+}
+
+/* Form Styling */
+.form {
+    display: none;
+}
+
+.form:not(.hidden) {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

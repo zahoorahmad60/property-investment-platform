@@ -1,0 +1,151 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0D1B2A;
+    color: #E0E0E0;
+    height: 100vh;
+}
+
+/* Sidebar Toggle Button Styling */
+.sidebar-toggle {
+    position: fixed;
+    top: 20px; /* Moved down slightly to avoid top nav overlap */
+    left: 10px; /* Positioned on the left */
+    background-color: #1B263B;
+    color: #E0E0E0;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 1100; /* Ensure the button is above everything */
+}
+
+/* Top Navigation Bar Styling */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1B263B;
+    color: #E0E0E0;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.top-nav .logo {
+    margin-left: 30px; /* Moves the logo to the right */
+}
+
+.top-nav .logo img {
+    height: 45px;
+}
+
+.top-nav .top-nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav .top-nav-links li {
+    margin: 0 15px;
+}
+
+.top-nav .top-nav-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.top-nav .top-nav-links a:hover {
+    color: #3DA5D9;
+    background-color: #415A77;
+    border-radius: 5px;
+}
+
+.top-nav .profile-icon img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Sidebar Navigation Styling */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0; /* Changed from -250px to 0px to keep it open by default */
+    width: 200px;
+    height: 100%;
+    background-color: #1f2c46;
+    color: #E0E0E0;
+    padding: 80px 20px 20px 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+
+.side-nav .user-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.side-nav .user-info img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.side-nav .user-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav li {
+    margin-bottom: 10px;
+}
+
+.side-nav a {
+    color: #E0E0E0;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.side-nav a:hover {
+    color: #3DA5D9;
+    background-color: #415A77;
+    border-radius: 5px;
+}
+
+/* Main Content Container Styling */
+.container {
+    margin-top: 80px; /* Adjust for the top-nav height */
+    padding: 80px;
+    width: 100%;
+    background-color: #1B263B;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Sidebar active state */
+.side-nav-active {
+    left: 0;
+}
